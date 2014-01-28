@@ -16,7 +16,7 @@ app.views.Home = Ext.extend(Ext.Panel, {
   		height: 20
   	},
 
-  	/* Video & Google Maps Buttons */
+  	/* Twitter & Google Maps Buttons */
   	new Ext.Panel({
   		height: 100,
 
@@ -62,7 +62,7 @@ app.views.Home = Ext.extend(Ext.Panel, {
   		height: 20
   	},
 
-  	/* Camera and Twitter Buttons */
+  	/* Camera and Payment Buttons */
   	new Ext.Panel({
   		height: 100,
 
@@ -111,7 +111,7 @@ app.views.Home = Ext.extend(Ext.Panel, {
   		height: 20
   	},
 
-  	/* Webview & Settings Buttons  */
+  	/* Stocks & Settings Buttons  */
   	new Ext.Panel({
   		height: 100,
 
@@ -130,10 +130,7 @@ app.views.Home = Ext.extend(Ext.Panel, {
 		  		width:  100,
 		  		height: 100,
 		  		handler: function() {
-		  			$fh.webview({
-		  				title: 'FeedHenry',
-		  				url: 'http://www.feedhenry.com/'
-		  			});
+		  			app.views.viewport.setActiveItem(app.views.stocks, {type: 'slide', direction: 'left'});
 		  		}
 		  	},
 		  	{

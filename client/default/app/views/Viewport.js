@@ -16,6 +16,7 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
       map:      new app.views.MapView(),
       twitter:  new app.views.Twitter(),        
       payment:  new app.views.Payment(),
+      stocks:   new app.views.Stocks(),
       settings: new app.views.Settings(),
       camera:   new app.views.Camera()
     });
@@ -24,6 +25,7 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
       items: [
         app.views.home,
         app.views.payment,
+        app.views.stocks,
         app.views.twitter,
         app.views.map,
         app.views.settings,
